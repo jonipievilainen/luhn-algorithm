@@ -7,9 +7,9 @@ namespace BankNumbers
         static void Main(string[] args)
         {
             Console.WriteLine("\nAccount number: 423456-781");
-            // BankNumbers.FinnishBankAccountNumber sourceAccountNumber = new FinnishBankAccountNumber("110335-1537");
-            // BankNumbers.FinnishBankAccountNumber sourceAccountNumber = new FinnishBankAccountNumber("123456-785");
-            BankNumbers.FinnishBankAccountNumber sourceAccountNumber = new FinnishBankAccountNumber("423456-781");
+            // BankNumbers.FinnishBankAccountNumber sourceAccountNumber = new FinnishBankAccountNumber("110335-1537");  // Not valid number
+            // BankNumbers.FinnishBankAccountNumber sourceAccountNumber = new FinnishBankAccountNumber("123456-785");   // A bank group
+            BankNumbers.FinnishBankAccountNumber sourceAccountNumber = new FinnishBankAccountNumber("423456-781");      // B bank group
 
             Console.WriteLine("Getting long format of account number...");
             string longFormatOfAccountNumber = sourceAccountNumber.GetLongFormat();
